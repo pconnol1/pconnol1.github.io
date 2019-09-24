@@ -113,7 +113,14 @@ a.active, .nav a:hover{
     display: none;
 }
 .projects .project{
-    width: 23%;
+    width: 25%;
     margin: 2%;
     float: left;
+    font-family: verdana;
 } 
+.project p{
+    color: rgb(167, 165, 165)
+}
+.project h3{
+
+}
