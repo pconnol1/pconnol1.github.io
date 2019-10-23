@@ -121,6 +121,10 @@ a.active, .nav a:hover{
 .project p{
     color: rgb(167, 165, 165)
 }
-.project h3{
-
+.resume{
+    position: absolute;
+    right:0;
+    top: 10%;
+    padding: 0 60px;
+    display: none;
 }
