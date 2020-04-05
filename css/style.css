@@ -113,7 +113,7 @@ a.active, .nav a:hover{
     display: none;
 }
 .projects .project{
-    width: 25%;
+    width: 100%;
     margin: 2%;
     float: left;
     font-family: verdana;
@@ -122,12 +122,11 @@ a.active, .nav a:hover{
     color: rgb(167, 165, 165)
 }
 .resume{
-    position: relative;
-    display: block;
-    right:0;
-    width:100%;
-    height:100%;
-    top: 10%;
-    padding-bottom: 150%;
+    width: 100%;
+    float: right;
     display: none;
+}
+.resume h3{
+    font-family: Verdana;
+    font-size: 30px;
 }
