@@ -11,9 +11,7 @@ a,a:link,a:hover,a:active,a:visited{
     font-weight:inherit;
     font-size:inherit;
 }
-.navbar-brand{
-	
-}
+
 .home{
 	margin-left:10%;
 	margin-right:10%;
@@ -60,6 +58,7 @@ a,a:link,a:hover,a:active,a:visited{
 }
 .card {
 	width: auto;
+	max-width: 800px;
 	height: auto;
 	margin: 50px 50px 50px 0;
 	background-color: #E8E4D3;
@@ -186,7 +185,7 @@ a,a:link,a:hover,a:active,a:visited{
 
 footer{
 	background-color:#334455;
-	color=#FFFFFF;
+	color:#FFFFFF;
 	padding: 100px;
 	text-align:center;
 }
