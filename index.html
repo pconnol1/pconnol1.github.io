@@ -1,120 +1,182 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
-        <Title>Patrick Connolly</Title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<Title>Patrick Connolly</Title>
         
     </head>
-    <body>
-        <div class="background">
-            <div class="nav">
-                <a class="a active" href="#">HOME</a>
-                <a class="b" href="#">ABOUT ME</a>
-                <a class="c" href="#">PROJECTS</a>
-                <a class="d" href="#">RESUME</a>
-                <a class="e" href="#">CONTACT ME</a>
-            </div>
-            <div class="content">
-                <div class="home">
-                    <h1>Patrick Connolly</h1>
-                    <h3>Junior Software Developer</h3>
-                </div>
-                <div class="aboutme">
-                    <p><b>Software Developer from South-West suburbs of Chicago, IL specializing in using Java, Python and C#.</b> Experience and extensive education in software design and application developement.<br><br> 
-                    A fast learner with excellent communication and multi-tasking skills. Strong work ethic in teams and individual settings to drive product success and process effieciency.<br><br> 
-                    Strong troubleshooting and problem solving skills with an analytical mindset. 
-                    </p>
-                </div>
-                <div class="projects">
-                    <a href = https://github.com/AlecJBuchanan/Antimatter-Gravity-Interferometer-Simulation>
-                        <div class= "project">
-                            <h3>Antimatter Gravity Interferometer</h3>
-                            <p>CUDA simulation for the diffraction of particles through two gratings.</p>
-                        </div>
-                    </a>
-                    <a href = https://github.com/pconnol1/NewsGateway>
-                        <div class = "project" >
-                            <h3>News Gateway</h3>
-                            <p>Android app to view news briefs written in Java.</p>
-                        </div>
-                    </a>
-                    <a href = https://github.com/pconnol1/CS429/tree/master/Connolly_Patrick_Assignment4 >
-                        <div class = "project">
-                            <h3>Page Rank Algorithm</h3>
-                            <p>Developed an algorithm to retrieve a webpages based on a queried search.</p>
-                        </div>
-                    </a>
-                    
-                </div>
-                <div class="resume">
-                    <a href = ./pdf/PatrickConnolly_Resume2.pdf>
-                        <h3>Click to see resume.</h3>
-                    </a>
-                </div>
-                <div class="contactme">
-    
-                </div>
-            </div>
-            
-        </div>
-        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript">
-        
-            $(document).ready(function(){
-                $('a').click(function(){
-                    //alert("I am clicked");
-                    var selected = $(this);
-                    $('a').removeClass('active');
-                    $(selected).addClass('active');
-                });
-                
-                var $a =$('.a'),
-                $b= $('.b'),
-                $c= $('.c'),
-                $d= $('.d'),
-                $e= $('.e'),
-                $home= $('.home'),
-                $aboutme= $('.aboutme'),
-                $projects= $('.projects'),
-                $resume= $('.resume'),
-                $contactme= $('.contactme');
-
-                $a.click(function(){
-                    $home.fadeIn();
-                    $aboutme.fadeOut();
-                    $projects.fadeOut();
-                    $resume.fadeOut();
-                    $contactme.fadeOut();
-                });
-                $b.click(function(){
-                    $aboutme.fadeIn();
-                    $home.fadeOut();
-                    $projects.fadeOut();
-                    $resume.fadeOut();
-                    $contactme.fadeOut();
-                });
-                $c.click(function(){
-                    $projects.fadeIn();
-                    $aboutme.fadeOut();
-                    $home.fadeOut();
-                    $resume.fadeOut();
-                    $contactme.fadeOut();
-                });
-                $d.click(function(){
-                    $resume.fadeIn();
-                    $aboutme.fadeOut();
-                    $home.fadeOut();
-                    $projects.fadeOut();
-                    $contactme.fadeOut();
-                });
-                $e.click(function(){
-                    $contactme.fadeIn();
-                    $aboutme.fadeOut();
-                    $projects.fadeOut();
-                    $resume.fadeOut();
-                    $home.fadeOut();
-                })
-            })
-        </script>
-    </body>
-</html>
+	<body>
+		<nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#334455;">
+			<a class="navbar-brand" href="#">Patrick Connolly</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse show" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" style="color:#FFFFFF" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" style="color:#FFFFFF" href="#experience">Experience + Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" style="color:#FFFFFF" href="#projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" style="color:#FFFFFF" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="home" id="home">
+			<img src="./images/1609803965767.jfif" width="300px" class="patrick" style="display:inline-block; border-radius:50%; margin-right:100px;">
+			<div style="display:inline-block;">
+				<h1>Hi there, I'm <b>Patrick.</b></h1>
+				<h3>I'm a developer based in <b>Chicago, IL.</b></h3>
+			</div>
+		</div>
+		<div class="experience" id="experience">
+			<h1>Experience</h1>
+			
+			<h3>Illinois Institute of Technology</h3>
+			<h4><i>BS in Computer Science, 2019</i></h4>
+			
+			
+			<div class="container">
+				<div class="card">
+					<div class="title-block">
+						<h3><b>Data Analyst Intern</b></h3>
+						
+						<h4 class="title">Forkaia</h4>
+						<h4 class="title right">2020-2020</h4>
+					</div>
+					<p>- Project lead in charge of analyzing all U.S. Financial stock investments for consumer recommendations in Python using NumPy and pandas. </p>
+					<p>- Used Python Django web framework and JavaScript to develope an interactive front end system. </p>
+				</div>
+				<div class="card">
+					<div class="title-block">
+						<h3><b>Mulesoft Developer</b></h3>
+						
+						<h4 class="title">Conflowence</h4>
+						<h4 class="title right">2019-2020</h4>
+					</div>
+					<p>- Developed scalable and efficient web based API systems and integrations for clients.</p>
+					<p>- Trained extensively in RAML and Mulesoft's development platforms.</p>
+					<p>- Merged the EPIC databases of two hospitals with over 1 million patients using Oracle and SQL in Anypoint Studio.</p>
+				</div>
+				<div class="card">
+					<div class="title-block">
+						<h3><b>Computing Chair and Secretary</b></h3>
+						
+						<h4 class="title">Alpha Sigma Phi Fraternity</h4>
+						<h4 class="title right">2016-2018</h4>
+					</div>
+					<p>- Managed and maintained the network of a 4-story building with hundreds of connected devices and installed house servers to act as academic resources.</p>
+					<p>- Kept legal documentation of meeting minutes and distributed them to all 60 active chapter members and began development of chapter website.<p>
+					<p>- Merged the EPIC databases of two hospitals with over 1 million patients using Oracle and SQL in Anypoint Studio.</p>
+				</div>
+			</div>
+			
+			<div class="skills">
+				<h1>Skills</h1>
+				<div>
+					<h3>Experienced With:</h3>
+					<p>Java</p>
+					<p>Python</p>
+					<p>HTML</p>
+					<p>PHP</p>
+					<p>C</p>
+					<p>C#</p>
+					<p>SQL</p>
+					<p>JavaScript</p>
+					<p>CSS</p>
+					<p>Android</p>
+					<p>JSON</p>
+					<p>REST</p>
+					<p>RAML</p>
+				</div>
+				<div>
+					<h3>Familiar With:</h3>
+					<p>Assembly</p>
+					<p>C++</p>
+					<p>Git</p>
+					<p>Ruby</p>
+					<p>JQuery</p>
+				</div>
+				<div>
+					<h3>Databases</h3>
+					<p>MySQL</p>
+					<p>SQLite</p>
+					<p>Oracle</p>
+				</div>
+				<div>
+					<h3>Big Data</h3>
+					<p>Numpy</p>
+					<p>Pandas</p>
+					<p>TensorFlow</p>
+					<p>CUDA</p>
+					<p>Beautiful Soup</p>
+				</div>
+			</div>
+		</div>
+		<div class="projects" id="projects">
+			<h1><b>Projects</b></h1>
+			<div class="container">
+				<div class="card">
+					<h2>Antimatter Gravity Interferometer</h2>
+					<p>Antimatter Gravity Interferometer CUDA simulation for the diffraction of particles through two gratings.</p>
+					<button>View</button>
+				</div>
+				<div class="card">
+					<h2>Relevance Feedback System</h2>
+					<p>Created a Relevance Feedback system for text queries in a collection of files. Used Cosine Similarity to study the effect the feedback had on Recall, Precision, and MAPcompared to Pseudo Relevance Feedback</p>
+					<button>View</button>
+				</div>
+				<div class="card">
+					<h2>News Gateway</h2>
+					<p>Created Async tasks and newsapi.org to download news articles to be displayed for user convenience. Wrote service requests and volley to send requests for the app to preload the data of the articles</p>
+					<button>View</button>
+				</div>
+				<div class="card">
+					<h2>XV6 Emulation</h2>
+					<p>Utilized theory of concurrency, queuing, and filesystems by modifying and optimizing an open-source operating system’s code using system calls in the C language</p>
+					<button>View</button>
+				</div>
+			</div>
+			<div style="text-align:center; width:100%;">
+				<button>More Projects</button>
+			</div>
+		</div>
+		
+		<div class="contact" id="contact">
+			<div class="container">
+				<div class="card">
+					<img src="./images/envelope-line.svg">
+					<h5>pconnol1@hawk.iit.edu</h5>
+				</div>
+				<div class="card">
+					<img src="./images/phone-call.svg">
+					<h5>708-420-7091</h5>
+				</div>
+				<div class="card">
+					<img src="./images/github.svg">
+					<h5>github.com/pconnol1</h5>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<h5 style="color:#FFFFFF">&copy;Patrick Connolly 2020</h5>
+		</footer>
+	</body>
